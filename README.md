@@ -48,7 +48,7 @@ We need to install Android Studio for getting access to the tools required to in
 * Again, go to the "SDK Manager" window -> select "Android SDK" under *System Settings*.
 * Next, select the "SDK Tools" tab from the navigation bar at the top and check the box next to "Show Package Details" here as well.
 * Look for and expand the Android SDK Build-Tools entry, then make sure that 33.0.0 is selected. You can unselect the others if you want.
-* Also make sure that ```Intel x86 Emulator Accelerator (HAXM installer)``` is selected.
+* Also make sure that ```Intel x86 Emulator Accelerator (HAXM installer)``` is selected.(no need for mac)
 
 ![image](https://user-images.githubusercontent.com/16555135/228755900-312591db-8076-497d-84dd-181c23d022c5.png)
 
@@ -108,6 +108,7 @@ This process is to add platform-tools to Path.
 Clone the repository into the docker container. Note that the docker container should have port 3000 open. Once you do that, navigate to ReactNativeServer folder. 
 - ```npm install```
 - ```systemctl start mongod```
+- ```mongo issuetracker scripts/init.mongo.js```
 - ```npm start``` (optionally, you can use ```screen npm start``` followed by ctrl+d to run the server in the background)
 
 ## Client
